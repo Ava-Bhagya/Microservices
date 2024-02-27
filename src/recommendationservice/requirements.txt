@@ -36,7 +36,7 @@ googleapis-common-protos==1.59.0
     # via
     #   google-api-core
     #   opentelemetry-exporter-otlp-proto-grpc
-grpcio==1.54.0
+grpcio==1.54.3
     # via
     #   grpcio-health-checking
     #   opentelemetry-exporter-otlp-proto-grpc
@@ -61,7 +61,7 @@ opentelemetry-distro==0.38b0
     # via -r requirements.in
 opentelemetry-exporter-otlp-proto-grpc==1.17.0
     # via -r requirements.in
-opentelemetry-instrumentation==0.38b0
+opentelemetry-instrumentation==0.41b0
     # via
     #   opentelemetry-distro
     #   opentelemetry-instrumentation-grpc
@@ -124,3 +124,4 @@ zipp==3.15.0
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
